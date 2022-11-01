@@ -1,0 +1,22 @@
+.card {
+    margin-top: 100px;
+    margin-left: 350px;
+    background: whitesmoke;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 10px 10px;
+}
+
+p {
+    float: right;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    

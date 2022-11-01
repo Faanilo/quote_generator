@@ -1,0 +1,4 @@
+  {Array.isArray(data) ? 
+                data.map((item) => {
+                  return <p className="card-text">{item.slip.advice}</p>;
+                }):console.log('tsy tableau ee sh')}
