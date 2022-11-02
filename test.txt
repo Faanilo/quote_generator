@@ -1,4 +1,14 @@
-  {Array.isArray(data) ? 
-                data.map((item) => {
-                  return <p className="card-text">{item.slip.advice}</p>;
-                }):console.log('tsy tableau ee sh')}
+<img
+                className="block h-8 w-auto lg:hidden"
+                src=""
+                
+              />
+              <img
+                className="hidden h-8 w-auto lg:block"
+                src=""
+                
+              />
+
+
+
+//tailwind css <script src="https://cdn.tailwindcss.com"></script>

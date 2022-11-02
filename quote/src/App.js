@@ -3,6 +3,7 @@ import Loading from "../src/components/Loading";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "../src/assets/App.css";
+import Navbar from "../src/components/Navbar"
 function App() {
   const [data, setData] = useState([]);
   let [loading, setIsLoading] = useState(true);
@@ -45,25 +46,26 @@ function App() {
   }, []);
   return (
     <div className="App">
+    <Navbar/>
       {loading ? (
         <Loading />
       ) : (
         <>
-          <Titlem />
           <div className="card">
             <div className="card-body">
               {data.map((item) => {
                 return (
                   <div>
                     <h5 className="card-text" key={item.id}>
-                      {item.text}
+                      "{item.text}"
+                     
                     </h5>
-                    <p className="card-text"> "{item.author}"</p>
+                    <p className="card-text"> ~{item.author}~ </p>
                   </div>
                 );
               })}
               <center>
-                <button className="btn btn-primary">Get Motivation</button>
+              <br/> <button type="button" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Get Motivation</button>
               </center>
             </div>
           </div>
