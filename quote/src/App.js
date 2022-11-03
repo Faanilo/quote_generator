@@ -46,8 +46,7 @@ function App() {
         console.error(error);
       });
   }, []);
-  return 
-  (
+  return (
     <div className="App">
       <Navbar />
       {loading ? (
